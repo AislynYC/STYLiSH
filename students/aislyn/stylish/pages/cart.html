@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Stylish</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="main-header">
+          <div class="logo-header">
+            <a href="../index.html?category=all">
+              <img class="logo" src="../images/logo.png" alt="Stylish" />
+            </a>
+          </div>
+          <div class="header-tools-mini">
+            <div class="search-panel">
+              <input type="text" id="search-input" />
+            </div>
+            <a class="header-tool-btn" id="cart-btn" href="#">
+              <img src="../images/cart.png" alt="cart" />
+              <div class="cart-qty"></div>
+            </a>
+            <a class="header-tool-btn" id="member-btn" href="#">
+              <img src="../images/member.png" alt="member" />
+            </a>
+          </div>
+          <nav>
+            <ul class="main-nav">
+              <li>
+                <a id="nav-btn-woman" href="../index.html?category=women"
+                  ><span>女</span><span>裝</span></a
+                >
+              </li>
+              <li>
+                <a id="nav-btn-man" href="../index.html?category=men"
+                  ><span>男</span><span>裝</span></a
+                >
+              </li>
+              <li>
+                <a id="nav-btn-accessories" href="../index.html?category=accessories"
+                  ><span>配</span><span>件</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div id="horizontal-divider"></div>
+      </header>
+      <!-- CART - SELECTED PRODUCT LIST Start -->
+      <div class="content-area">
+        <div class="section-title" id="cart-main-title">
+          <div id="cart-title">購物車</div>
+          <div class="info-title">數量</div>
+          <div class="info-title">單價</div>
+          <div class="info-title">小計</div>
+          <div id="block"></div>
+        </div>
+
+        <div class="list">
+          <!-- SELECTED PRODUCT LIST  Area -->
+        </div>
+        <!-- CART - SELECTED PRODUCT LIST  End -->
+
+        <!-- CART - SHIPPING FORM Start -->
+        <div class="shipping-section">
+          <div class="shipping-selection">
+            <div class="shipping-label">配送國家</div>
+            <select name="delivery-country" class="delivery" id="delivery-country">
+              <option value="taiwan">台灣或離島</option>
+            </select>
+            <div class="label">付款方式</div>
+            <select name="delivery-service" class="delivery" id="delivery-service">
+              <option value="home-delivery">宅配貨到付款</option>
+            </select>
+          </div>
+          <div class="reminder">
+            <p>※ 提醒您：</p>
+            <p>● 請填寫正確收件人資訊，避免包裹配送不達</p>
+            <p>● 請填寫正確收件人姓名 ( 與證件相符 )，避免無法領取</p>
+          </div>
+        </div>
+        <!-- CART - SHIPPING FORM End -->
+        <!-- CART - RECIPIENT FORM Start -->
+        <div class="recipient-section">
+          <div class="section-title">收件資料</div>
+          <div class="recipient-name input-group">
+            <label for="name-input">收件人姓名</label>
+            <input type="text" name="name-input" id="name-input" value="喲嘿" />
+          </div>
+          <div class="recipient-email input-group">
+            <label for="email-input">Email</label>
+            <input type="text" name="email-input" id="email-input" value="abc@gmail.com"" />
+          </div>
+          <div class="recipient-phone input-group">
+            <label for="phone-input">手機號碼</label>
+            <input type="text" name="phone-input" id="phone-input" value="0912345678"/>
+          </div>
+          <div class="recipient-email input-group">
+            <label for="address-input">收件地址</label>
+            <input type="text" name="address-input" id="address-input" value="台北市內湖區小湖街123號"/>
+          </div>
+          <div class="recipient-prefer-time">
+            <p class="label">配送時間</p>
+            <div id="time-selections">
+              <div class="time-selection">
+                <input type="radio" id="morning" name="prefer-time" value="morning" />
+                <label for="morning">08:00 - 12:00</label>
+              </div>
+              <div class="time-selection">
+                <input type="radio" id="afternoon" name="prefer-time" value="afternoon" />
+                <label for="afternoon">14:00 - 18:00</label>
+              </div>
+              <div class="time-selection">
+                <input type="radio" id="any-time" name="prefer-time" value="any-time" checked />
+                <label for="any-time">不指定</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CART - RECIPIENT FORM End -->
+
+        <!-- CART - PAYMENT FORM Start -->
+        <div class="payment-section">
+          <div class="section-title">付款資料</div>
+          <div class="credit-card-number input-group">
+            <label for="card-number">信用卡號碼</label>
+            <div class="tpfield" id="card-number"></div>
+            <div class="cc-alert" id="cc-number-alert">請正確填寫卡號</div>
+          </div>
+          <div class="credit-card-exp input-group">
+            <label for="card-exp">有效期限</label>
+            <div class="tpfield" id="card-expiration-date"></div>
+            <div class="cc-alert" id="cc-exp-alert">請正確填寫卡片效期</div>
+          </div>
+          <div class="credit-card-ccv input-group">
+            <label for="card-ccv">安全碼</label>
+            <div class="tpfield" id="card-ccv"></div>
+            <div class="cc-alert" id="ccv-alert">請正確填寫安全碼</div>
+          </div>
+        </div>
+        <!-- CART - PAYMENT FORM End -->
+
+        <!-- CART - CONFIRM SECTION Start -->
+        <div class="confirm-section">
+          <div class="calc">
+            <div class="calc-result">
+              <p>總金額</p>
+              <div class="calc-value-wrap">
+                NT. <span class="calc-value" id="total-price"></span>
+              </div>
+            </div>
+            <div class="calc-result">
+              <p>運費</p>
+              <div class="calc-value-wrap">
+                NT. <span class="calc-value" id="freight-fee">30</span>
+              </div>
+            </div>
+            <div class="calc-result">
+              <p>應付金額</p>
+              <div class="calc-value-wrap">
+                NT. <span class="calc-value" id="final-price"></span>
+              </div>
+            </div>
+          </div>
+          <div id="confirm-btn">確認付款</div>
+        </div>
+        <!-- CART - CONFIRM SECTION  End -->
+      </div>
+
+      <div class="mobile-tool">
+        <a href="#" class="mobile-tool-btn">
+          <div class="mobile-tool-wrap">
+            <div class="mobile-tool-logo" id="mobile-cart-btn">
+              <img src="../images/cart-mobile.png" alt="cart" />
+              <div class="cart-qty"></div>
+            </div>
+            <span class="mobile-tool-tag">購物車</span>
+          </div>
+        </a>
+        <a href="#" class="mobile-tool-btn">
+          <div class="mobile-tool-wrap">
+            <img class="mobile-tool-logo" src="../images/member-mobile.png" alt="member" />
+            <span class="mobile-tool-tag">會員</span>
+          </div>
+        </a>
+      </div>
+      <div class="main-footer">
+        <div class="wrap">
+          <ul>
+            <li><a href="#">關於 Stylish</a></li>
+            <li><a href="#">服務條款</a></li>
+            <li><a href="#">隱私政策</a></li>
+            <li><a href="#">聯絡我們</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+          <div class="external-link">
+            <img class="external-logo" src="../images/line.png" alt="Line" />
+            <img class="external-logo" src="../images/twitter.png" alt="Twitter" />
+            <img class="external-logo" src="../images/facebook.png" alt="Facebook" />
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2018. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://js.tappaysdk.com/tpdirect/v5.1.0"></script>
+    <script src="../js/cart.js"></script>
+  </body>
+</html>

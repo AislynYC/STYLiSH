@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Stylish</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/product.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="main-header">
+          <div class="logo-header">
+            <a href="../index.html?category=all">
+              <img class="logo" src="../images/logo.png" alt="Stylish" />
+            </a> 
+          </div>
+          <div class="header-tools-mini">
+            <div class="search-panel">
+              <input type="text" id="search-input" />
+            </div>
+            <a class="header-tool-btn" id="cart-btn" href="./cart.html"><img src="../images/cart.png" alt="cart" />
+              <div class="cart-qty"></div>
+            </a>
+            <a class="header-tool-btn" id="member-btn" href="#"><img  src="../images/member.png" alt="member" /></a>
+            
+          </div>
+          <nav>
+            <ul class="main-nav">
+              <li>
+                <a id="nav-btn-woman" href="../index.html?category=women"
+                  ><span>女</span><span>裝</span></a
+                >
+              </li>
+              <li>
+                <a id="nav-btn-man" href="../index.html?category=men"><span>男</span><span>裝</span></a>
+              </li>
+              <li>
+                <a id="nav-btn-accessories" href="../index.html?category=accessories"
+                  ><span>配</span><span>件</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div id="horizontal-divider"></div>
+      </header>
+      <!-- PRODUCT-Detail Start -->
+      <div class="content-area">
+        <div class="row">
+          <!-- PRODUCT-Detail Area -->
+          <div class="product-main-wrap">
+            <div class="product-main-img-area">
+              <!-- Product Main Image -->
+            </div>
+            <div class="main-info-area">
+              <!-- Product-Name -->
+              <!-- Product-Id -->
+              <div class="product-price"></div>
+              <div class="color-area">
+                <div class="label"><span>顏色&nbsp;｜</span></div>
+                <div class="options">
+                  <!-- Color Boxes -->
+                </div>
+              </div>
+              <div class="size-area">
+                <div class="label"><span>尺寸&nbsp;｜</span></div>
+                <div class="options">
+                  <!-- Size Boxes -->
+                </div>
+              </div>
+              <div class="quantity-area">
+                <div class="label"><span>數量&nbsp;｜</span></div>
+                <div class="options">
+                  <div id="qty-minus-btn">-</div>
+                  <div id="qty-number"></div>
+                  <div id="qty-plus-btn">+</div>
+                </div>
+              </div>
+              <div class="add-to-cart-btn">加入購物車</div>
+              <div class="desc">
+                <!-- Product Summary -->
+              </div>
+            </div>
+          </div>
+
+          <div class="sub-info-area">
+            <div class="divider">
+              <div class="sub-info-title">細部說明</div>
+              <div class="divider-line"></div>
+            </div>
+            <!-- Product Sub Info -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PRODUCT-Detail End -->
+      <div class="mobile-tool">
+        <a href="./cart.html" class="mobile-tool-btn">
+          <div class="mobile-tool-wrap">
+            <div class="mobile-tool-logo" id="mobile-cart-btn">
+              <img src="../images/cart-mobile.png" alt="cart" />
+              <div class="cart-qty"></div>
+            </div>
+            <span class="mobile-tool-tag">購物車</span>
+          </div>
+        </a>
+        <a href="#" class="mobile-tool-btn">
+          <div class="mobile-tool-wrap">
+            <img
+              class="mobile-tool-logo"
+              src="../images/member-mobile.png"
+              alt="member"
+            />
+            <span class="mobile-tool-tag">會員</span>
+          </div>
+        </a>
+      </div>
+      <div class="main-footer">
+        <div class="wrap">
+          <ul>
+            <li><a href="#">關於 Stylish</a></li>
+            <li><a href="#">服務條款</a></li>
+            <li><a href="#">隱私政策</a></li>
+            <li><a href="#">聯絡我們</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+          <div class="external-link">
+            <img class="external-logo" src="../images/line.png" alt="Line" />
+            <img
+              class="external-logo"
+              src="../images/twitter.png"
+              alt="Twitter"
+            />
+            <img
+              class="external-logo"
+              src="../images/facebook.png"
+              alt="Facebook"
+            />
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2018. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  
+    <script src="../js/product.js"></script>
+  </body>
+</html>
