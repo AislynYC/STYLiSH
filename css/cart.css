@@ -1,0 +1,290 @@
+#loading {
+  background: url('../images/loading.gif') no-repeat center center;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  display: none;
+}
+
+.content-area {
+  width: 90%;
+  margin: 0 auto;
+  color: #3f3a3a;
+  margin-top: 99px;
+  padding-bottom: 50px;
+}
+
+label,
+.label {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+input[type='text'] {
+  border: 1px solid #979797;
+  border-radius: 8px;
+  cursor: text;
+  height: 30px;
+}
+
+.section-title {
+  font-weight: bold;
+  padding: 20px 10px 10px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #3f3a3a;
+}
+
+.info-title {
+  display: none;
+}
+
+.product-item {
+  border-bottom: 1px solid #3f3a3a;
+  padding: 10px 0;
+  display: flex;
+
+  align-items: center;
+  flex-flow: wrap;
+}
+
+.img-info-wrap {
+  display: flex;
+  width: 85%;
+}
+
+.product-img-wrap {
+  width: 114px;
+}
+.product-img {
+  width: 100%;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  width: 200px;
+}
+
+.product-name,
+.product-id {
+  padding: 3px 0;
+}
+
+.product-id {
+  margin-bottom: 20px;
+}
+
+.product-color,
+.product-size {
+  padding: 3px 0;
+}
+
+.remove-btn-wrap {
+  width: 40px;
+}
+
+.remove-btn {
+  width: 100%;
+  cursor: pointer;
+}
+
+.list-label {
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+.qty-wrap,
+.price-wrap,
+.sub-total-wrap {
+  flex: auto;
+  text-align: center;
+}
+
+/* Form Area */
+.shipping-selection {
+  background-color: #e8e8e8;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.shipping-label {
+  margin-bottom: 10px;
+}
+
+.delivery {
+  width: 100%;
+}
+
+.reminder p {
+  line-height: 26px;
+}
+
+#time-selections {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.confirm-section {
+  position: relative;
+  height: 320px;
+}
+.calc {
+  position: absolute;
+  right: 0;
+  margin-top: 40px;
+  width: 60%;
+}
+
+.calc-value {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.calc-result {
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+  margin: 30px 0;
+  font-size: 16px;
+}
+
+.calc-result:nth-child(2) {
+  border-bottom: 1px solid black;
+}
+#confirm-btn {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 16px;
+  background-color: black;
+  width: 100%;
+  padding: 7px 0;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 3.2px;
+  cursor: pointer;
+}
+/************==== Tap Pay =====***********/
+
+.tpfield {
+  border: 1px solid #979797;
+  border-radius: 8px;
+  cursor: text;
+  height: 30px;
+}
+
+.cc-alert {
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+/************==== Media Queries =====***********/
+@media (min-width: 560px) {
+  .content-area {
+    margin-top: 99px;
+  }
+  .img-info-wrap {
+    width: 90%;
+  }
+}
+
+@media (min-width: 680px) {
+  .content-area {
+    margin-top: 140px;
+  }
+}
+@media (min-width: 768px) {
+  .list {
+    border: 1px solid #979797;
+    padding: 30px;
+  }
+
+  #cart-main-title {
+    display: flex;
+    border: none;
+  }
+  #cart-title {
+    width: 400px;
+  }
+  .info-title {
+    font-size: 16px;
+    display: block;
+    flex: auto;
+    text-align: center;
+  }
+  #block {
+    width: 40px;
+  }
+  .product-item {
+    border: none;
+  }
+  .img-info-wrap {
+    display: flex;
+    width: 400px;
+  }
+  .remove-btn-wrap {
+    order: 5;
+  }
+
+  .remove-btn {
+    vertical-align: middle;
+  }
+
+  .list-label {
+    display: none;
+  }
+  .calc {
+    width: 40%;
+  }
+  #confirm-btn {
+    width: 40%;
+    position: absolute;
+    right: 0;
+  }
+
+  input[type='text'] {
+    width: 60%;
+  }
+  .tpfield {
+    width: 60%;
+  }
+  #time-selections {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-area {
+    width: 80%;
+    margin-top: 0;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .content-area {
+    width: 60%;
+    margin-top: 0;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .info-title {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-154995511-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-154995511-1');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Stylish</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Tangerine:700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/thank.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="main-header">
+          <div class="logo-header">
+            <a href="../index.html?category=all">
+              <img class="logo" src="../images/logo.png" alt="Stylish" />
+            </a>
+          </div>
+          <div class="header-tools-mini">
+            <div class="search-panel">
+              <input type="text" id="search-input" />
+            </div>
+            <a class="header-tool-btn" id="cart-btn" href="./cart.html"
+              ><img src="../images/cart.png" alt="cart" />
+              <div class="cart-qty"></div>
+            </a>
+            <a class="header-tool-btn" id="member-btn-web"
+              ><img src="../images/member.png" alt="member"
+            /></a>
+          </div>
+          <nav>
+            <ul class="main-nav">
+              <li>
+                <a id="nav-btn-woman" href="../index.html?category=women"
+                  ><span>女</span><span>裝</span></a
+                >
+              </li>
+              <li>
+                <a id="nav-btn-man" href="../index.html?category=men"
+                  ><span>男</span><span>裝</span></a
+                >
+              </li>
+              <li>
+                <a id="nav-btn-accessories" href="../index.html?category=accessories"
+                  ><span>配</span><span>件</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div id="horizontal-divider"></div>
+      </header>
+      <!-- PRODUCT-Detail Start -->
+      <div class="content-area">
+        <div id="thank-msg">
+          <div id="thank-you">Thank you</div>
+          <h2>您的訂單已送出，感謝您的購買！</h2>
+          <h3>訂購編號為：<span id="order-number"></span></h3>
+
+          <h3>如有任何問題，歡迎與我們聯絡。</h3>
+          <button id="continue-btn">繼續購買</button>
+        </div>
+      </div>
+    </div>
+    <!-- PRODUCT-Detail End -->
+    <div class="mobile-tool">
+      <a href="./cart.html" class="mobile-tool-btn">
+        <div class="mobile-tool-wrap">
+          <div class="mobile-tool-logo" id="mobile-cart-btn">
+            <img src="../images/cart-mobile.png" alt="cart" />
+            <div class="cart-qty"></div>
+          </div>
+          <span class="mobile-tool-tag">購物車</span>
+        </div>
+      </a>
+      <a href="#" class="mobile-tool-btn">
+        <div class="mobile-tool-wrap" id="member-btn-mobile">
+          <img class="mobile-tool-logo" src="../images/member-mobile.png" alt="member" />
+          <span class="mobile-tool-tag">會員</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="main-footer">
+      <div class="wrap">
+        <ul>
+          <li><a href="#">關於 Stylish</a></li>
+          <li><a href="#">服務條款</a></li>
+          <li><a href="#">隱私政策</a></li>
+          <li><a href="#">聯絡我們</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        <div class="external-link">
+          <img class="external-logo" src="../images/line.png" alt="Line" />
+          <img class="external-logo" src="../images/twitter.png" alt="Twitter" />
+          <img class="external-logo" src="../images/facebook.png" alt="Facebook" />
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2018. All rights reserved.</p>
+      </div>
+    </div>
+    <script src="../js/app.js"></script>
+    <script src="../js/fb.js"></script>
+    <script src="../js/thank.js"></script>
+  </body>
+</html>

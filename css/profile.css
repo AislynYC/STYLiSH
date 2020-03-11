@@ -1,0 +1,171 @@
+.content-area {
+  margin-top: 110px;
+}
+
+.profile {
+  margin: 50px auto 20px;
+  width: 90%;
+  display: flex;
+}
+
+/* Tab */
+
+#tab {
+  display: flex;
+  flex-flow: row-reverse;
+  margin: 0 auto;
+  justify-content: center;
+}
+#tab > ul {
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  list-style: none;
+  z-index: 1;
+}
+.tab-title {
+  list-style: none;
+}
+#tab > ul > li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 5px -1px;
+  border: 1px solid #c0a6a6;
+  border-radius: 0 10px 10px 0;
+  line-height: 25px;
+  background: #313538;
+  padding: 0 5px;
+  list-style: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#tab > ul > li a {
+  display: inline-block;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  writing-mode: vertical-rl;
+  letter-spacing: 2px;
+}
+#tab > ul > li a:hover {
+  color: #c49871;
+}
+#tab > ul > li.active-tab {
+  border-left: none;
+  background: #fff;
+}
+
+#tab > ul > li.active-tab > a {
+  color: #070707;
+}
+#tab > .tab-inner {
+  display: none;
+  padding: 40px;
+  height: 280px;
+  width: 100%;
+  color: #000;
+  border: 1px #bcbcbc solid;
+  background-color: white;
+  z-index: -1;
+  border-radius: 10px 0 10px 10px;
+}
+
+#tab > .show-tab {
+  display: block;
+}
+
+.tab-content {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#user-pic {
+  margin-right: 30px;
+}
+
+.user-pic-img {
+  border: 1px #bcbcbc solid;
+  padding: 5px;
+}
+
+table {
+  margin: 0 auto;
+}
+
+th,
+td {
+  padding: 10px 25px;
+}
+#user-desc {
+  line-height: 30px;
+}
+
+tr {
+  padding: 10px;
+  border-bottom: 1px #bcbcbc solid;
+}
+
+@media (min-width: 680px) {
+  .content-area {
+    margin-top: 150px;
+  }
+
+  .profile {
+    width: 70%;
+  }
+
+  #tab > .tab-inner {
+    height: 330px;
+    padding: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-area {
+    margin-top: 20px;
+  }
+
+  .profile {
+    width: 60%;
+  }
+
+  /* Tab */
+
+  #tab {
+    width: 100%;
+    position: relative;
+  }
+  #tab > ul {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: -34px;
+  }
+
+  #tab > ul > li {
+    margin: 0 -1px -1px 0;
+    height: 35px;
+    padding: 0 15px;
+    border-radius: 10px 10px 0 0;
+  }
+  #tab > ul > li a {
+    writing-mode: horizontal-tb;
+  }
+
+  #tab > ul > li.active-tab {
+    border-left: 1px solid #c0a6a6;
+    border-bottom: none;
+  }
+
+  #tab > .tab-inner {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .tab-content {
+    width: 100%;
+    display: flex;
+    margin: 0;
+  }
+}
