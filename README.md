@@ -3,7 +3,7 @@
 An eCommerce website
 
 ## Demo
-https://aislynyc.github.io/Stylish/index.html
+https://aislynyc.github.io/STYLiSH/
 
 ## Technologies
 
